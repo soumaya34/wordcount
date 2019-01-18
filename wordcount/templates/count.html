@@ -1,0 +1,17 @@
+
+<h2>Your text: </h2>
+{{ yourtext }}
+<h2>your text containe {{ length }} words</h2>
+
+{% for w, c in sortedwords %}
+
+{{ w }} -- {{ c }}
+
+{% endfor %}
+
+
+
+<br><br>
+<form action="{% url 'home' %}">
+    <button>Start again</button>
+</form>
